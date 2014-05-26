@@ -28,10 +28,21 @@ gem 'spring',        group: :development
 
 gem 'hirb'
 
+group :development, :test do
+  gem 'rspec-rails'
+end
+
+group :test do
+  gem 'selenium-webdriver'
+  gem 'capybara'
+end
+
 group :development do
 	gem 'better_errors'
   gem 'binding_of_caller'
 end
+
+gem 'rails_12factor', group: :production
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -44,3 +55,4 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
