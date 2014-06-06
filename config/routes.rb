@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   get 'reset_form/home'
   get 'reset_form/about'
+  get 'reset_form/contact'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
